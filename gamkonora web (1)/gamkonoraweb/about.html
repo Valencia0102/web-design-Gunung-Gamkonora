@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Explore Gamkonora</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS utama website -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <!-- Menu navigasi dibuat sama dengan halaman Home -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gamkonora sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-mountain"></i>
+                Explore Gamkonora
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules</a>
+                    </li>
+                    <!-- DROPDOWN HIKING -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active"
+                           href="#"
+                           id="hikingDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            Hiking
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="hikingDropdown">
+
+                            <li>
+                                <a class="dropdown-item" href="tourguide.html">
+                                    Hiking Guide
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="equipment.html">
+                                    Equipment
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item active" href="adventure.html">
+                                    Adventure Tips
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                      <!-- EXPLORE DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="exploreDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Explore
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="exploreDropdown">
+                        <li><a class="dropdown-item" href="trail-map.html">Interactive Trail Map</a></li>
+                        <li><a class="dropdown-item" href="booking.html">Hiking Booking</a></li>
+                        <li><a class="dropdown-item" href="weather.html">Weather & Status</a></li>
+                        <li><a class="dropdown-item" href="reviews.html">Visitor Reviews</a></li>
+                        <li><a class="dropdown-item" href="local-guide.html">Local Tourism & UMKM</a></li>
+                    </ul>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+    <!-- ================= ABOUT HERO ================= -->
+    <!-- Banner pembuka halaman About -->
+
+    <header class="about-hero">
+
+        <!-- FOTO BANNER ABOUT:
+             Ganti URL foto ini dengan foto Gunung Gamkonora.
+             Bisa juga menggunakan foto lokal: img/gamkonora.jpeg
+        -->
+        <div class="about-hero-image"></div>
+
+        <div class="container about-hero-content">
+
+            <span class="about-label">MENGENAL GAMKONORA</span>
+
+            <h1>
+                Tentang Gunung
+                <span>Gamkonora</span>
+            </h1>
+
+            <p>
+                Mengenal lebih dekat keindahan alam dan karakteristik
+                salah satu gunung berapi di Maluku Utara.
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- ================= INTRODUCTION ================= -->
+    <!-- Penjelasan utama tentang Gunung Gamkonora -->
+
+    <section class="about-intro py-5">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Kolom gambar -->
+                <div class="col-lg-6">
+
+                    <!-- FOTO UTAMA ABOUT:
+                         Ganti src dengan lokasi foto milikmu.
+                         Contoh: src="img/gamkonora.jpeg"
+                    -->
+                    <img
+                        src="img/galeri8.jpeg"
+                        alt="Pemandangan pegunungan"
+                        class="about-main-image">
+
+                    <div class="about-image-caption">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Halmahera Barat, Maluku Utara
+                    </div>
+
+                </div>
+
+                <!-- Kolom teks -->
+                <div class="col-lg-6">
+
+                    <span class="about-section-label">
+                        TENTANG DESTINASI
+                    </span>
+
+                    <h2 class="about-title">
+                        Mengenal Lebih Dekat
+                        Gunung Gamkonora
+                    </h2>
+
+                    <p class="about-text">
+                        Gunung Gamkonora merupakan gunung berapi yang
+                        terletak di Pulau Halmahera, Kabupaten
+                        Halmahera Barat, Provinsi Maluku Utara.
+                    </p>
+
+                    <p class="about-text">
+                        Gunung ini menjadi salah satu bagian penting
+                        dari bentang alam Halmahera. Keberadaannya
+                        menghadirkan pemandangan alam pegunungan yang
+                        menarik untuk dikenal dan dipelajari.
+                    </p>
+
+                    <p class="about-text">
+                        Melalui halaman ini, pengunjung diajak untuk
+                        mengenal lokasi, karakteristik, serta daya
+                        tarik alam Gunung Gamkonora.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= INFORMATION ================= -->
+    <!-- Informasi singkat mengenai lokasi gunung -->
+
+    <section class="about-information py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="about-section-label">
+                    INFORMASI UMUM
+                </span>
+
+                <h2 class="about-title">
+                    Sekilas Tentang Gamkonora
+                </h2>
+
+                <p class="about-subtitle">
+                    Beberapa informasi dasar untuk mengenal
+                    Gunung Gamkonora lebih dekat.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Informasi lokasi -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="about-info-card">
+
+                        <div class="about-info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <h3>Lokasi</h3>
+
+                        <p>
+                            Pulau Halmahera, Kabupaten Halmahera Barat,
+                            Provinsi Maluku Utara.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Informasi jenis gunung -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="about-info-card">
+
+                        <div class="about-info-icon">
+                            <i class="bi bi-mountain"></i>
+                        </div>
+
+                        <h3>Jenis Gunung</h3>
+
+                        <p>
+                            Gunung berapi yang menjadi bagian dari
+                            kawasan vulkanik di Indonesia.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Informasi lingkungan -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="about-info-card">
+
+                        <div class="about-info-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+
+                        <h3>Lingkungan Alam</h3>
+
+                        <p>
+                            Kawasan pegunungan dengan bentang alam
+                            dan lingkungan alami khas Halmahera.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= NATURAL BEAUTY ================= -->
+    <!-- Bagian yang menjelaskan daya tarik alam -->
+
+    <section class="about-beauty py-5">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="about-section-label">
+                        PESONA ALAM
+                    </span>
+
+                    <h2 class="about-title">
+                        Keindahan yang Patut Dijaga
+                    </h2>
+
+                    <p class="about-text">
+                        Gunung Gamkonora merupakan bagian dari
+                        kekayaan alam Maluku Utara. Bentang alam
+                        pegunungan di sekitarnya menjadi salah satu
+                        daya tarik yang menarik untuk diperkenalkan.
+                    </p>
+
+                    <p class="about-text">
+                        Keindahan alam tersebut juga mengingatkan
+                        kita akan pentingnya menjaga lingkungan,
+                        menghormati alam, dan memperhatikan
+                        keselamatan ketika berada di kawasan gunung.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <!-- FOTO PESONA ALAM:
+                         Ganti URL ini dengan foto hutan, lereng,
+                         atau pemandangan Gunung Gamkonora.
+                    -->
+                    <img
+                        src="img/pemandangan2.jpeg"
+                        alt="Keindahan alam pegunungan"
+                        class="about-beauty-image">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CLOSING ================= -->
+
+    <section class="about-closing">
+        <div class="container text-center">
+
+            <i class="bi bi-globe-asia-australia about-closing-icon"></i>
+
+            <h2>
+                Kenali Alam, Hargai Kehidupan
+            </h2>
+
+            <p>
+                Gamkonora bukan hanya tentang keindahan gunung,
+                tetapi juga tentang alam dan kehidupan
+                masyarakat di sekitarnya.
+            </p>
+
+            <a href="culture.html" class="btn about-closing-button">
+                Kenali Budayanya
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="home-footer">
+        <div class="container text-center">
+
+            <h5>Explore Gamkonora</h5>
+
+            <p>
+                Mengenal keindahan alam dan budaya
+                Maluku Utara.
+            </p>
+
+            <small>
+                © 2026 Explore Gamkonora. Seluruh hak cipta dilindungi.
+            </small>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

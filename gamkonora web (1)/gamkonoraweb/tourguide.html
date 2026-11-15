@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panduan Pendakian - Explore Gamkonora</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+    <!-- CSS utama website -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gamkonora sticky-top">
+    <div class="container">
+
+         <a class="navbar-brand" href="index.html">
+            Explore Gamkonora
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="rules.html">Rules</a>
+                </li>
+
+                <!-- HIKING DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="hikingDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Hiking
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="hikingDropdown">
+                        <li><a class="dropdown-item" href="tourguide.html">Hiking Guide</a></li>
+                        <li><a class="dropdown-item" href="equipment.html">Equipment</a></li>
+                        <li><a class="dropdown-item" href="adventure.html">Adventure Tips</a></li>
+                    </ul>
+                </li>
+                  <!-- EXPLORE DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="exploreDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Explore
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="exploreDropdown">
+                        <li><a class="dropdown-item" href="trail-map.html">Interactive Trail Map</a></li>
+                        <li><a class="dropdown-item" href="booking.html">Hiking Booking</a></li>
+                        <li><a class="dropdown-item" href="weather.html">Weather & Status</a></li>
+                        <li><a class="dropdown-item" href="reviews.html">Visitor Reviews</a></li>
+                        <li><a class="dropdown-item" href="local-guide.html">Local Tourism & UMKM</a></li>
+                    </ul>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HEADER HALAMAN ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1>Panduan Pendakian</h1>
+        <p>
+            Kenali jalur, titik pendakian, dan estimasi perjalanan
+            Gunung Gamkonora sebelum merencanakan pendakian.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= KONTEN UTAMA ================= -->
+<main class="tourguide-section">
+    <div class="container">
+
+        <!-- STATUS GUNUNG -->
+        <div class="status-alert">
+            <div class="status-icon">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+
+            <div>
+                <h4>Informasi Status Gunung</h4>
+                <p>
+                    Berdasarkan informasi tanggal 7 November 2026,
+                    Gunung Gamkonora berada pada Level II (Waspada)
+                    dan aktivitas pendakian ditutup. Pengunjung harus
+                    mengikuti informasi terbaru dari PVMBG dan petugas
+                    Pos Pengamatan Gunung Api Gamkonora.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- ================= 1. JALUR PENDAKIAN ================= -->
+        <section class="guide-detail" id="jalur">
+
+            <div class="section-number">01</div>
+
+            <h2>Jalur Pendakian</h2>
+        
+
+            <p class="section-intro">
+                Mengenal rute dan karakteristik perjalanan menuju
+                puncak Gunung Gamkonora.
+        
+
+            </p>
+
+            <img src="img/alam6.jpeg"
+                 alt="Jalur pendakian Gunung Gamkonora"
+                 class="detail-image">
+
+            <p>
+                Jalur pendakian Gunung Gamkonora dapat dimulai dari
+                Desa Gamsungi, Kecamatan Ibu, Kabupaten Halmahera Barat.
+                Sebelum melakukan pendakian, pengunjung perlu melakukan
+                registrasi dan mengikuti pengarahan dari petugas
+                setempat.
+            </p>
+
+            <h3>Karakteristik Jalur</h3>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <i class="bi bi-tree-fill"></i>
+                    <h4>Area Perkebunan</h4>
+                    <p>
+                        Bagian awal perjalanan melewati kawasan
+                        perkebunan masyarakat.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="bi bi-flower1"></i>
+                    <h4>Hutan Tropis</h4>
+                    <p>
+                        Jalur dilanjutkan melalui kawasan hutan
+                        dengan vegetasi yang cukup rapat.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h4>Jalur Menanjak</h4>
+                    <p>
+                        Beberapa bagian memiliki medan menanjak
+                        yang membutuhkan kondisi fisik baik.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <i class="bi bi-mountain"></i>
+                    <h4>Area Bebatuan</h4>
+                    <p>
+                        Mendekati kawasan puncak terdapat medan
+                        bebatuan dan area yang lebih terbuka.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3>Informasi Rute</h3>
+
+            <div class="route-info">
+                <div>
+                    <span>Titik awal</span>
+                    <strong>Desa Gamsungi</strong>
+                </div>
+
+                <div>
+                    <span>Wilayah</span>
+                    <strong>Kecamatan Ibu, Halmahera Barat</strong>
+                </div>
+
+                <div>
+                    <span>Ketinggian puncak</span>
+                    <strong>1.635 mdpl</strong>
+                </div>
+            </div>
+
+            <h3>Daya Tarik Alam</h3>
+
+            <p>
+                Gunung Gamkonora memiliki daya tarik berupa kawasan
+                kawah, danau kecil, lembah, serta panorama alam
+                Halmahera. Keindahan bentang alam tersebut menjadi
+                salah satu hal yang menarik untuk dikenal melalui
+                informasi dan dokumentasi pendakian.
+            </p>
+
+        </section>
+
+
+        <!-- ================= 2. POS PENDAKIAN ================= -->
+        <section class="guide-detail" id="pos">
+
+            <div class="section-number">02</div>
+
+            <h2>Pos dan Titik Penting Pendakian</h2>
+
+            <p class="section-intro">
+                Informasi titik-titik penting yang terdapat
+                sepanjang jalur pendakian Gunung Gamkonora.
+            </p>
+
+            <img src="img/pos.jpeg"
+                 alt="Titik penting pendakian Gunung Gamkonora"
+                 class="detail-image">
+
+            <p>
+                Sepanjang jalur pendakian terdapat beberapa titik
+                yang menjadi penanda perjalanan. Titik-titik tersebut
+                meliputi pos, area persinggahan, sumber air, camp area,
+                kawah, dan lokasi pemandangan.
+            </p>
+
+            <h3>Daftar Pos dan Titik Penting</h3>
+
+            <div class="table-responsive">
+                <table class="table point-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Pos / Titik</th>
+                            <th>Ketinggian</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>1</td><td>Pos Pengamatan / Registrasi</td><td>84 mdpl</td></tr>
+                        <tr><td>2</td><td>Start Point</td><td>104 mdpl</td></tr>
+                        <tr><td>3</td><td>Pos 1</td><td>310 mdpl</td></tr>
+                        <tr><td>4</td><td>Pos 2</td><td>541 mdpl</td></tr>
+                        <tr><td>5</td><td>Pos 3</td><td>640 mdpl</td></tr>
+                        <tr><td>6</td><td>Pos 4</td><td>818 mdpl</td></tr>
+                        <tr><td>7</td><td>Pos Persinggahan</td><td>1.019 mdpl</td></tr>
+                        <tr><td>8</td><td>Titik Rawan Longsor</td><td>1.066 mdpl</td></tr>
+                        <tr><td>9</td><td>Pos 5</td><td>1.181 mdpl</td></tr>
+                        <tr><td>10</td><td>Sumber Air 1</td><td>1.399 mdpl</td></tr>
+                        <tr><td>11</td><td>Camp Area</td><td>1.367 mdpl</td></tr>
+                        <tr><td>12</td><td>Sumber Air 2</td><td>1.401 mdpl</td></tr>
+                        <tr><td>13</td><td>Danau</td><td>1.370 mdpl</td></tr>
+                        <tr><td>14</td><td>Kawah</td><td>1.382 mdpl</td></tr>
+                        <tr><td>15</td><td>Spot View</td><td>1.237 mdpl</td></tr>
+                        <tr><td>16</td><td>Fasilitas Internet (Wi-Fi)</td><td>1.614 mdpl</td></tr>
+                        <tr><td>17</td><td>Spot View</td><td>1.395 mdpl</td></tr>
+                        <tr><td>18</td><td>Titik Rawan Longsor</td><td>1.617 mdpl</td></tr>
+                        <tr><td>19</td><td>Spot View</td><td>1.613 mdpl</td></tr>
+                        <tr><td>20</td><td>Puncak Gunung Gamkonora</td><td>1.635 mdpl</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="note-box">
+                <strong>Catatan:</strong>
+                <p>
+                    Daftar tersebut merupakan titik hasil pemetaan
+                    jalur, bukan berarti seluruh titik merupakan
+                    pos resmi atau memiliki fasilitas. Kondisi
+                    fasilitas di lapangan perlu dikonfirmasi kembali
+                    kepada pengelola atau petugas setempat.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= 3. ESTIMASI PENDAKIAN ================= -->
+        <section class="guide-detail" id="estimasi">
+
+            <div class="section-number">03</div>
+
+            <h2>Estimasi Waktu Pendakian</h2>
+
+            <p class="section-intro">
+                Perkiraan waktu perjalanan dan persiapan yang
+                perlu diperhatikan sebelum melakukan pendakian.
+            </p>
+
+            <p>
+                Waktu perjalanan menuju puncak Gunung Gamkonora
+                dapat berbeda-beda tergantung kondisi fisik,
+                kecepatan berjalan, cuaca, kondisi jalur, dan
+                waktu istirahat.
+            </p>
+
+            <h3>Perkiraan Waktu Perjalanan</h3>
+
+            <div class="estimate-grid">
+
+                <div class="estimate-card">
+                    <i class="bi bi-clock-history"></i>
+                    <h4>4–5 Jam</h4>
+                    <p>
+                        Perkiraan perjalanan naik menuju puncak
+                        berdasarkan laporan perjalanan dari
+                        Pos Vulkanologi.
+                    </p>
+                </div>
+
+                <div class="estimate-card">
+                    <i class="bi bi-arrow-down-circle"></i>
+                    <h4>Menyesuaikan Kondisi</h4>
+                    <p>
+                        Waktu perjalanan turun bergantung pada
+                        kondisi medan, cuaca, dan kemampuan pendaki.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3>Persiapan Sebelum Pendakian</h3>
+
+            <div class="preparation-list">
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Memastikan kondisi fisik dalam keadaan baik.
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Membawa air minum dan persediaan makanan.
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Menggunakan sepatu khusus untuk pendakian.
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Membawa perlengkapan keselamatan dan P3K.
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Mengikuti arahan petugas dan aturan setempat.
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Menjaga kebersihan dan tidak membuang sampah.
+                </div>
+
+            </div>
+
+            <div class="note-box">
+                <strong>Perhatian:</strong>
+                <p>
+                    Estimasi waktu di atas merupakan informasi
+                    perencanaan, bukan jaminan waktu tempuh.
+                    Jangan melakukan pendakian selama akses
+                    masih ditutup atau belum diizinkan oleh
+                    pihak berwenang.
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p>
+            &copy; 2026 Explore Gamkonora.
+            All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

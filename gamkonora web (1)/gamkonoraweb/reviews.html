@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visitor Reviews | Explore Gamkonora</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gamkonora sticky-top">
+
+        <div class="container">
+
+            <!-- LOGO WEBSITE -->
+            <a class="navbar-brand" href="index.html">
+                Explore Gamkonora
+            </a>
+
+            <!-- TOMBOL NAVBAR RESPONSIVE -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENU NAVIGASI -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <!-- CULTURE -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture</a>
+                    </li>
+
+                    <!-- GALLERY -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <!-- RULES -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules</a>
+                    </li>
+
+                    <!-- HIKING DROPDOWN -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="hikingDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Hiking
+                        </a>
+
+                        <ul class="dropdown-menu"
+                            aria-labelledby="hikingDropdown">
+
+                            <li>
+                                <a class="dropdown-item" href="tourguide.html">
+                                    Hiking Guide
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="equipment.html">
+                                    Equipment
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="adventure.html">
+                                    Adventure Tips
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- EXPLORE DROPDOWN -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="exploreDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Explore
+                        </a>
+
+                        <ul class="dropdown-menu"
+                            aria-labelledby="exploreDropdown">
+
+                            <li>
+                                <a class="dropdown-item" href="trail-map.html">
+                                    Interactive Trail Map
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="booking.html">
+                                    Hiking Booking
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="weather.html">
+                                    Weather & Status
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="reviews.html">
+                                    Visitor Reviews
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="local-guide.html">
+                                    Local Tourism & UMKM
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- CONTACT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- LOGIN -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <header class="feature-hero">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                EXPLORE GAMKONORA • DISCOVER MORE
+            </span>
+
+            <h1>Visitor Reviews & Experiences</h1>
+
+            <p>
+                Tempat untuk berbagi cerita, penilaian, dan masukan
+                tentang pengalaman wisata Gunung Gamkonora.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="feature-section">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <!-- FORM ULASAN -->
+                    <div class="col-lg-5">
+
+                        <div class="feature-panel">
+
+                            <h3 class="feature-title">
+                                Bagikan Pengalaman
+                            </h3>
+
+                            <p class="feature-muted">
+                                Bagikan cerita dan pengalaman Anda selama
+                                mengunjungi Gunung Gamkonora.
+
+                                Ulasan disimpan di browser perangkat ini
+                                untuk versi demo dan belum dipublikasikan
+                                ke server.
+                            </p>
+
+
+                            <!-- FORM UNTUK MENAMBAHKAN ULASAN -->
+                            <form id="reviewForm" class="feature-form">
+
+                                <!-- INPUT NAMA -->
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+                                        Nama Tampilan
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="name"
+                                        placeholder="Masukkan nama Anda"
+                                        required
+                                        maxlength="50">
+
+                                </div>
+
+
+                                <!-- PILIH RATING -->
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+                                        Rating Pengalaman
+                                    </label>
+
+                                    <select class="form-select" name="rating">
+
+                                        <option value="5">
+                                            ★★★★★ - Sangat Baik
+                                        </option>
+
+                                        <option value="4">
+                                            ★★★★☆ - Baik
+                                        </option>
+
+                                        <option value="3">
+                                            ★★★☆☆ - Cukup
+                                        </option>
+
+                                        <option value="2">
+                                            ★★☆☆☆ - Kurang
+                                        </option>
+
+                                        <option value="1">
+                                            ★☆☆☆☆ - Buruk
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- INPUT CERITA -->
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+                                        Cerita atau Masukan
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        name="message"
+                                        rows="4"
+                                        placeholder="Ceritakan pengalaman Anda..."
+                                        required
+                                        maxlength="700"></textarea>
+
+                                </div>
+
+
+                                <!-- TOMBOL KIRIM ULASAN -->
+                                <button type="submit" class="feature-btn">
+
+                                    <i class="bi bi-send"></i>
+                                    Kirim Ulasan
+
+                                </button>
+
+                            </form>
+
+
+                            <!-- NOTIFIKASI -->
+                            <div
+                                id="reviewNotice"
+                                class="mt-3"
+                                aria-live="polite">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DAFTAR ULASAN -->
+                    <div class="col-lg-7">
+
+                        <div class="feature-panel">
+
+                            <!-- JUDUL DAN JUMLAH ULASAN -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+                                <h3 class="feature-title mb-0">
+                                    Ulasan Pengunjung
+                                </h3>
+
+                                <span class="small feature-muted" id="reviewCount">
+                                    0 ulasan
+                                </span>
+
+                            </div>
+
+
+                            <!-- TEMPAT MENAMPILKAN ULASAN -->
+                            <div id="reviewList" class="mt-3">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="home-footer">
+
+        <div class="container text-center">
+
+            <h5>Explore Gamkonora</h5>
+
+            <p>
+                Mengenal keindahan alam dan budaya
+                Maluku Utara.
+            </p>
+
+            <small>
+                © 2026 Explore Gamkonora. Seluruh hak cipta dilindungi.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- REVIEW JAVASCRIPT -->
+    <script>
+
+        // MENGAMBIL ELEMEN HTML
+        const reviewForm = document.getElementById("reviewForm");
+
+        const reviewList = document.getElementById("reviewList");
+
+        const reviewCount = document.getElementById("reviewCount");
+
+        const reviewNotice = document.getElementById("reviewNotice");
+
+
+        // MENGAMANKAN TEKS DARI INPUT PENGUNJUNG
+        function escapeHTML(text) {
+
+            return String(text).replace(/[&<>"']/g, char => ({
+
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+
+            }[char]));
+
+        }
+
+
+        // MENGAMBIL DATA ULASAN DARI BROWSER
+        function getReviews() {
+
+            return JSON.parse(
+                localStorage.getItem("gamkonoraReviews") || "[]"
+            );
+
+        }
+
+
+        // MENAMPILKAN ULASAN
+        function drawReviews() {
+
+            const reviews = getReviews();
+
+            // MEMPERBARUI JUMLAH ULASAN
+            reviewCount.textContent = reviews.length + " ulasan";
+
+
+            // JIKA BELUM ADA ULASAN
+            if (reviews.length === 0) {
+
+                reviewList.innerHTML = `
+                    <p class="feature-muted mt-3">
+                        Belum ada ulasan.
+                        Jadilah yang pertama berbagi pengalaman.
+                    </p>
+                `;
+
+                return;
+
+            }
+
+
+            // MENAMPILKAN ULASAN TERBARU TERLEBIH DAHULU
+            reviewList.innerHTML = reviews.slice().reverse().map((review, index) => {
+
+                const rating = Math.min(
+                    5,
+                    Math.max(1, Number(review.rating) || 1)
+                );
+
+                // MENENTUKAN NOMOR ASLI ULASAN
+                const originalIndex = reviews.length - 1 - index;
+
+                return `
+
+                    <!-- KARTU ULASAN -->
+                    <article class="review-item">
+
+                        <!-- NAMA DAN RATING -->
+                        <div class="d-flex justify-content-between flex-wrap gap-2">
+
+                            <b>${escapeHTML(review.name)}</b>
+
+                            <span class="review-stars"
+                                aria-label="${rating} dari 5">
+
+                                ${"★".repeat(rating)}${"☆".repeat(5 - rating)}
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- ISI ULASAN -->
+                        <p class="mb-1 mt-2">
+                            ${escapeHTML(review.message).replace(/\n/g, "<br>")}
+                        </p>
+
+
+                        <!-- TANGGAL ULASAN -->
+                        <small class="feature-muted">
+
+                            ${new Date(review.created).toLocaleDateString("id-ID")}
+
+                        </small>
+
+
+                        <!-- TOMBOL HAPUS ULASAN -->
+                        <div class="mt-3">
+
+                            <button
+                                type="button"
+                                class="btn btn-sm btn-outline-danger"
+                                data-review-index="${originalIndex}">
+
+                                <i class="bi bi-trash"></i>
+                                Hapus Ulasan
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                `;
+
+            }).join("");
+
+        }
+
+
+        // MENGIRIM DAN MENYIMPAN ULASAN
+        reviewForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            // MENGAMBIL DATA DARI FORM
+            const data = Object.fromEntries(
+                new FormData(reviewForm)
+            );
+
+            // MENAMBAHKAN TANGGAL ULASAN
+            data.created = new Date().toISOString();
+
+
+            // MENGAMBIL ULASAN YANG SUDAH TERSIMPAN
+            const reviews = getReviews();
+
+
+            // MENAMBAHKAN ULASAN BARU
+            reviews.push(data);
+
+
+            // MENYIMPAN ULASAN KE BROWSER
+            localStorage.setItem(
+                "gamkonoraReviews",
+                JSON.stringify(reviews)
+            );
+
+
+            // MENGOSONGKAN FORM
+            reviewForm.reset();
+
+
+            // PESAN BERHASIL
+            reviewNotice.innerHTML = `
+
+                <div class="alert alert-success">
+
+                    <i class="bi bi-check-circle"></i>
+
+                    Terima kasih!
+                    Ulasan Anda berhasil disimpan di browser ini.
+
+                </div>
+
+            `;
+
+
+            // MEMPERBARUI DAFTAR ULASAN
+            drawReviews();
+
+        });
+
+
+        // MENGHAPUS ULASAN
+        reviewList.addEventListener("click", function(event) {
+
+            // MEMERIKSA APAKAH TOMBOL HAPUS DIKLIK
+            const deleteButton = event.target.closest("[data-review-index]");
+
+            if (!deleteButton) {
+                return;
+            }
+
+
+            // KONFIRMASI SEBELUM MENGHAPUS
+            const confirmation = confirm(
+                "Apakah Anda yakin ingin menghapus ulasan ini?"
+            );
+
+            if (!confirmation) {
+                return;
+            }
+
+
+            // MENGAMBIL NOMOR ULASAN
+            const index = Number(deleteButton.dataset.reviewIndex);
+
+
+            // MENGAMBIL SEMUA DATA ULASAN
+            const reviews = getReviews();
+
+
+            // MENGHAPUS ULASAN YANG DIPILIH
+            reviews.splice(index, 1);
+
+
+            // MENYIMPAN PERUBAHAN KE BROWSER
+            localStorage.setItem(
+                "gamkonoraReviews",
+                JSON.stringify(reviews)
+            );
+
+
+            // MEMPERBARUI TAMPILAN ULASAN
+            drawReviews();
+
+
+            // PESAN BERHASIL DIHAPUS
+            reviewNotice.innerHTML = `
+
+                <div class="alert alert-info">
+
+                    <i class="bi bi-check-circle"></i>
+
+                    Ulasan berhasil dihapus.
+
+                </div>
+
+            `;
+
+        });
+
+
+        // MENAMPILKAN ULASAN SAAT HALAMAN DIBUKA
+        drawReviews();
+
+    </script>
+
+</body>
+
+</html>

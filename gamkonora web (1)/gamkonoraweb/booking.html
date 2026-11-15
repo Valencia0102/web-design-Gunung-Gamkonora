@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hiking Trip Booking | Explore Gamkonora</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS UTAMA WEBSITE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="booking-page">
+
+    <!-- =====================================
+         1. NAVBAR WEBSITE
+    ====================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gamkonora sticky-top">
+        <div class="container">
+
+            <!-- NAMA WEBSITE -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-mountain"></i>
+                Explore Gamkonora
+            </a>
+
+            <!-- TOMBOL MENU HP -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- DAFTAR MENU NAVBAR -->
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <!-- CULTURE -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Culture</a>
+                    </li>
+
+                    <!-- GALLERY -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <!-- RULES -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="rules.html">Rules</a>
+                    </li>
+
+                    <!-- DROPDOWN HIKING -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Hiking
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="tourguide.html">
+                                    Hiking Guide
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="equipment.html">
+                                    Equipment
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="adventure.html">
+                                    Adventure Tips
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- DROPDOWN EXPLORE -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Explore
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="trail-map.html">
+                                    Interactive Trail Map
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item active" href="booking.html">
+                                    Hiking Booking
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="weather.html">
+                                    Weather & Status
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="reviews.html">
+                                    Visitor Reviews
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="local-guide.html">
+                                    Local Tourism & UMKM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- CONTACT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- LOGIN -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- =====================================
+         2. HERO / JUDUL HALAMAN
+    ====================================== -->
+    <header class="booking-hero">
+        <div class="container">
+
+            <!-- LABEL KECIL -->
+            <span class="booking-eyebrow">
+                EXPLORE GAMKONORA • PLAN YOUR JOURNEY
+            </span>
+
+            <!-- JUDUL HALAMAN -->
+            <h1>Hiking Trip Booking</h1>
+
+            <!-- DESKRIPSI HALAMAN -->
+            <p>
+                Rencanakan perjalanan Anda menjelajahi Gunung Gamkonora.
+                Isi informasi kunjungan dan kebutuhan pendakian
+                sebelum menghubungi pengelola atau pemandu setempat.
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================
+         3. KONTEN UTAMA BOOKING
+    ====================================== -->
+    <main class="booking-main">
+        <div class="container">
+
+            <div class="row g-4 align-items-start">
+
+                <!-- =================================
+                     3A. KOLOM FORM BOOKING
+                ================================== -->
+                <div class="col-lg-7">
+
+                    <section class="booking-form-card">
+
+                        <!-- LABEL FORM -->
+                        <span class="booking-section-label">
+                            PLAN YOUR ADVENTURE
+                        </span>
+
+                        <!-- JUDUL FORM -->
+                        <h2 class="booking-title">
+                            Form Rencana Pendakian
+                        </h2>
+
+                        <!-- DESKRIPSI FORM -->
+                        <p class="booking-description">
+                            Isi informasi berikut untuk menyimpan
+                            rencana perjalanan Anda.
+                        </p>
+
+
+                        <!-- FORM INPUT BOOKING -->
+                        <form id="bookingForm" class="row g-3">
+
+                            <!-- INPUT NAMA -->
+                            <div class="col-md-6">
+                                <label for="bookingName" class="form-label">
+                                    Nama lengkap
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="bookingName"
+                                    name="name"
+                                    maxlength="80"
+                                    placeholder="Masukkan nama"
+                                    required>
+                            </div>
+
+
+                            <!-- INPUT EMAIL -->
+                            <div class="col-md-6">
+                                <label for="bookingEmail" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="bookingEmail"
+                                    name="email"
+                                    placeholder="nama@email.com"
+                                    required>
+                            </div>
+
+
+                            <!-- INPUT TANGGAL -->
+                            <div class="col-md-6">
+                                <label for="tripDate" class="form-label">
+                                    Tanggal rencana
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    id="tripDate"
+                                    name="date"
+                                    required>
+                            </div>
+
+
+                            <!-- INPUT JUMLAH PESERTA -->
+                            <div class="col-md-6">
+                                <label for="bookingPeople" class="form-label">
+                                    Jumlah peserta
+                                </label>
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="bookingPeople"
+                                    name="people"
+                                    min="1"
+                                    max="30"
+                                    value="1"
+                                    required>
+                            </div>
+
+
+                            <!-- PILIH JENIS KEBUTUHAN -->
+                            <div class="col-12">
+                                <label for="bookingPackage" class="form-label">
+                                    Jenis kebutuhan
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="bookingPackage"
+                                    name="package">
+
+                                    <option>Informasi pendakian</option>
+
+                                    <option>
+                                        Konsultasi pemandu lokal
+                                    </option>
+
+                                    <option>
+                                        Wisata alam dan budaya
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <!-- INPUT CATATAN TAMBAHAN -->
+                            <div class="col-12">
+                                <label for="bookingNotes" class="form-label">
+                                    Catatan tambahan
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="bookingNotes"
+                                    name="notes"
+                                    rows="3"
+                                    maxlength="500"
+                                    placeholder="Tuliskan kebutuhan atau pertanyaan Anda"></textarea>
+                            </div>
+
+
+                            <!-- TOMBOL SIMPAN -->
+                            <div class="col-12">
+                                <button type="submit" class="booking-submit-btn">
+                                    <i class="bi bi-calendar-check"></i>
+                                    Simpan Rencana
+                                </button>
+                            </div>
+
+                        </form>
+
+
+                        <!-- TEMPAT PESAN BERHASIL / GAGAL -->
+                        <div id="bookingNotice"
+                             class="booking-notice"
+                             aria-live="polite">
+                        </div>
+
+                    </section>
+                </div>
+
+
+                <!-- =================================
+                     3B. KOLOM INFORMASI SAMPING
+                ================================== -->
+                <div class="col-lg-5">
+
+                    <div class="booking-sidebar">
+
+                        <!-- CARD INFORMASI PENTING -->
+                        <section class="booking-side-card">
+
+                            <!-- ICON CARD -->
+                            <div class="booking-card-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <!-- JUDUL CARD -->
+                            <h2>Informasi Penting</h2>
+
+                            <!-- DESKRIPSI CARD -->
+                            <p>
+                                Formulir ini merupakan simulasi
+                                perencanaan perjalanan. Data belum
+                                dikirim kepada pengelola atau penyedia
+                                jasa pendakian.
+                            </p>
+
+                            <!-- DAFTAR INFORMASI -->
+                            <ul>
+                                <li>
+                                    Pastikan tanggal dan kondisi
+                                    perjalanan telah dikonfirmasi.
+                                </li>
+
+                                <li>
+                                    Ikuti arahan pengelola dan
+                                    otoritas setempat.
+                                </li>
+
+                                <li>
+                                    Jangan berangkat jika jalur ditutup
+                                    atau kondisi tidak aman.
+                                </li>
+
+                                <li>
+                                    Persiapkan perlengkapan pendakian
+                                    sebelum melakukan perjalanan.
+                                </li>
+                            </ul>
+
+                        </section>
+
+
+                        <!-- CARD RENCANA TERSIMPAN -->
+                        <section class="booking-side-card saved-plan-card">
+
+                            <!-- ICON CARD -->
+                            <div class="booking-card-icon">
+                                <i class="bi bi-journal-check"></i>
+                            </div>
+
+                            <!-- JUDUL CARD -->
+                            <h2>Rencana Tersimpan</h2>
+
+                            <!-- DESKRIPSI CARD -->
+                            <p>
+                                Daftar rencana pendakian yang tersimpan
+                                di browser perangkat ini.
+                            </p>
+
+                            <!-- DAFTAR RENCANA DARI JAVASCRIPT -->
+                            <div id="bookingList" class="booking-list">
+                                Belum ada rencana tersimpan.
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =====================================
+         4. FOOTER WEBSITE
+    ====================================== -->
+    <footer class="booking-footer">
+        <div class="container text-center">
+
+            <!-- NAMA WEBSITE -->
+            <h3>Explore Gamkonora</h3>
+
+            <!-- DESKRIPSI FOOTER -->
+            <p>
+                Mengenal keindahan alam dan budaya Maluku Utara.
+            </p>
+
+            <!-- COPYRIGHT -->
+            <small>
+                © <span id="yearNow"></span>
+                Explore Gamkonora. Seluruh hak cipta dilindungi.
+            </small>
+
+        </div>
+    </footer>
+
+
+    <!-- =====================================
+         5. BOOTSTRAP JAVASCRIPT
+         Untuk dropdown dan navbar HP
+    ====================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- =====================================
+         6. BOOKING JAVASCRIPT
+         Menyimpan dan menghapus rencana
+    ====================================== -->
+    <script>
+
+        // MENGAMBIL ELEMEN HTML
+        const bookingForm = document.getElementById("bookingForm");
+        const bookingNotice = document.getElementById("bookingNotice");
+        const bookingList = document.getElementById("bookingList");
+        const dateInput = document.getElementById("tripDate");
+
+
+        // MENDAPATKAN TANGGAL HARI INI
+        function getToday() {
+            const today = new Date();
+
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, "0");
+            const day = String(today.getDate()).padStart(2, "0");
+
+            return `${year}-${month}-${day}`;
+        }
+
+        // TANGGAL MINIMAL ADALAH HARI INI
+        dateInput.min = getToday();
+
+
+        // MENGAMBIL DATA DARI BROWSER
+        function getBookings() {
+            try {
+                return JSON.parse(
+                    localStorage.getItem("gamkonoraBookings") || "[]"
+                );
+            } catch (error) {
+                return [];
+            }
+        }
+
+
+        // MENAMPILKAN DAFTAR RENCANA
+        function showBookings() {
+
+            const bookings = getBookings();
+
+            // MENGOSONGKAN TAMPILAN SEBELUM DIISI ULANG
+            bookingList.innerHTML = "";
+
+            // JIKA BELUM ADA DATA
+            if (bookings.length === 0) {
+                const emptyMessage = document.createElement("p");
+                emptyMessage.className = "booking-empty";
+                emptyMessage.textContent = "Belum ada rencana tersimpan.";
+
+                bookingList.appendChild(emptyMessage);
+                return;
+            }
+
+            // MENAMPILKAN SETIAP DATA
+            bookings.forEach((item, index) => {
+
+                const wrapper = document.createElement("div");
+                wrapper.className = "booking-list-item";
+
+                // TANGGAL RENCANA
+                const title = document.createElement("strong");
+                title.textContent = item.date;
+
+                // JUMLAH PESERTA DAN KEBUTUHAN
+                const details = document.createElement("p");
+                details.textContent =
+                    item.people + " peserta • " + item.package;
+
+                // TOMBOL HAPUS
+                const deleteButton = document.createElement("button");
+                deleteButton.type = "button";
+                deleteButton.className = "booking-delete-btn";
+                deleteButton.textContent = "Hapus";
+
+                deleteButton.addEventListener("click", function () {
+                    removeBooking(index);
+                });
+
+                // MEMASUKKAN ELEMEN KE DALAM CARD
+                wrapper.appendChild(title);
+                wrapper.appendChild(details);
+                wrapper.appendChild(deleteButton);
+
+                bookingList.appendChild(wrapper);
+            });
+        }
+
+
+        // MENGHAPUS RENCANA
+        function removeBooking(index) {
+
+            const bookings = getBookings();
+
+            bookings.splice(index, 1);
+
+            localStorage.setItem(
+                "gamkonoraBookings",
+                JSON.stringify(bookings)
+            );
+
+            showBookings();
+        }
+
+
+        // MENYIMPAN RENCANA BARU
+        bookingForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const formData = new FormData(bookingForm);
+            const bookingData = Object.fromEntries(formData);
+
+            // MEMERIKSA TANGGAL
+            if (bookingData.date < getToday()) {
+
+                bookingNotice.innerHTML = `
+                    <div class="booking-message booking-error">
+                        Pilih tanggal hari ini atau setelahnya.
+                    </div>
+                `;
+
+                return;
+            }
+
+            // MENGAMBIL DATA LAMA
+            const bookings = getBookings();
+
+            // MENAMBAHKAN DATA BARU
+            bookings.push(bookingData);
+
+            // MENYIMPAN KE BROWSER
+            localStorage.setItem(
+                "gamkonoraBookings",
+                JSON.stringify(bookings)
+            );
+
+            // MENGOSONGKAN FORM
+            bookingForm.reset();
+
+            // MENGATUR ULANG TANGGAL MINIMAL
+            dateInput.min = getToday();
+
+            // MENAMPILKAN PESAN BERHASIL
+            bookingNotice.innerHTML = `
+                <div class="booking-message booking-success">
+                    Rencana berhasil disimpan di browser ini.
+                    Ini bukan booking resmi.
+                </div>
+            `;
+
+            // MEMPERBARUI DAFTAR RENCANA
+            showBookings();
+        });
+
+
+        // MENAMPILKAN TAHUN OTOMATIS
+        document.getElementById("yearNow").textContent =
+            new Date().getFullYear();
+
+
+        // MENAMPILKAN DATA SAAT HALAMAN DIBUKA
+        showBookings();
+
+    </script>
+
+</body>
+</html>

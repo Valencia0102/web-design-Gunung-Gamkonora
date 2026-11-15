@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JUDUL HALAMAN -->
+    <title>Gallery | Explore Gamkonora</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ======================================
+     1. NAVBAR
+====================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gamkonora">
+    <div class="container">
+
+        <!-- NAMA WEBSITE -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            Explore Gamkonora
+        </a>
+
+        <!-- TOMBOL MENU UNTUK HP -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- DAFTAR MENU NAVBAR -->
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="rules.html">Rules</a>
+                </li>
+                <!-- DROPDOWN HIKING -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active"
+                           href="#"
+                           id="hikingDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            Hiking
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="hikingDropdown">
+
+                            <li>
+                                <a class="dropdown-item" href="tourguide.html">
+                                    Hiking Guide
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="equipment.html">
+                                    Equipment
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item active" href="adventure.html">
+                                    Adventure Tips
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                       <!-- EXPLORE DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="exploreDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Explore
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        aria-labelledby="exploreDropdown">
+                        <li><a class="dropdown-item" href="trail-map.html">Interactive Trail Map</a></li>
+                        <li><a class="dropdown-item" href="booking.html">Hiking Booking</a></li>
+                        <li><a class="dropdown-item" href="weather.html">Weather & Status</a></li>
+                        <li><a class="dropdown-item" href="reviews.html">Visitor Reviews</a></li>
+                        <li><a class="dropdown-item" href="local-guide.html">Local Tourism & UMKM</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ======================================
+     2. HERO / BANNER GALLERY
+====================================== -->
+<section class="gallery-hero">
+
+    <!-- FOTO BACKGROUND BANNER DIATUR DI CSS -->
+
+    <div class="gallery-hero-content">
+
+        <!-- LABEL KECIL -->
+        <span class="gallery-label">EXPLORE THE BEAUTY</span>
+
+        <!-- JUDUL BANNER -->
+        <h1>Our Gallery</h1>
+
+        <!-- PARAGRAF BANNER -->
+        <p>
+            Jelajahi keindahan alam, panorama pegunungan,
+            dan kehidupan di sekitar Gunung Gamkonora
+            melalui dokumentasi foto.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ======================================
+     3. INTRODUCTION GALLERY
+====================================== -->
+<section class="gallery-intro container">
+
+    <!-- LABEL BAGIAN -->
+    <span class="gallery-section-label">
+        PHOTO COLLECTION
+    </span>
+
+    <!-- JUDUL INTRODUCTION -->
+    <h2 class="gallery-title">
+        Discover Gamkonora Through Pictures
+    </h2>
+
+    <!-- PARAGRAF INTRODUCTION -->
+    <p class="gallery-description">
+        Setiap gambar menyimpan cerita tentang keindahan alam. Temukan berbagai potret
+        menarik dari kawasan Gamkonora dan sekitarnya.
+    </p>
+
+</section>
+
+
+<!-- ======================================
+     4. MAIN PHOTO GALLERY
+====================================== -->
+<section class="gallery-main container">
+
+    <div class="row g-4">
+
+        <!-- FOTO 1: GUNUNG GAMKONORA -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 1 -->
+                <!-- Ganti kotak ini dengan tag img jika foto sudah tersedia -->
+                <!-- Contoh:
+                <img src="img/gamkonora.jpeg"
+                     alt="Gunung Gamkonora"
+                     class="gallery-card-image">
+                -->
+                <img src="img/galeri1.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+                
+
+                <!-- JUDUL FOTO 1 -->
+                <div class="gallery-card-info">
+                    <h4>Mountain Peak</h4>
+                    <p>Pesona Kawah Utama Gunung Gamkonora</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 2: PEMANDANGAN ALAM -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 2 -->
+                <!-- Contoh foto: img/pemandangan.jpg -->
+                 <img src="img/pemandangan.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+                
+                <!-- JUDUL FOTO 2 -->
+                <div class="gallery-card-info">
+                    <h4>Sunset At the Peak</h4>
+                    <p>Keindahan alam sekitar kawah</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 3: HUTAN DAN LINGKUNGAN -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 3 -->
+                <!-- Contoh foto: img/hutan.jpg -->
+                <img src="img/alam2.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+
+                <!-- JUDUL FOTO 3 -->
+                <div class="gallery-card-info">
+                    <h4>Forest Nature</h4>
+                    <p>Lingkungan alam yang asri</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 4: KEHIDUPAN MASYARAKAT -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 4 -->
+                <!-- Contoh foto: img/masyarakat.jpg -->
+                <img src="img/galeri2.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+
+                <!-- JUDUL FOTO 4 -->
+                <div class="gallery-card-info">
+                    <h4>Create Lake at Sunset</h4>
+                    <p>Danau kawah yang indah saat senja</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 5: BUDAYA LOKAL -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 5 -->
+                <!-- Contoh foto: img/budaya.jpg -->
+                <img src="img/galeri5.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+
+                <!-- JUDUL FOTO 5 -->
+                <div class="gallery-card-info">
+                    <h4>Camping at the Crater</h4>
+                    <p>Berkemah dan menikmati keindahan alam</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 6: WISATA DAN PETUALANGAN -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 6 -->
+                <!-- Contoh foto: img/wisata.jpg -->
+                 <img src="img/galeri3.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+                
+
+                <!-- JUDUL FOTO 6 -->
+                <div class="gallery-card-info">
+                    <h4>Nature Adventure</h4>
+                    <p>menjelajahi keindahaan alam gamkonora</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 7: PERSPEKTIF GUNUNG -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 7 -->
+                <!-- Contoh foto: img/perspektif.jpg -->
+                 <img src="img/malam2.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+                
+
+                <!-- JUDUL FOTO 7 -->
+                <div class="gallery-card-info">
+                    <h4>Starry Night</h4>
+                    <p>Malam bertabur bintang di kawasan kawah</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 8: DOKUMENTASI LAINNYA -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 8 -->
+                <!-- Contoh foto: img/dokumentasi.jpg -->
+                <img src="img/galeri6.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+
+                <!-- JUDUL FOTO 8 -->
+                <div class="gallery-card-info">
+                    <h4>Mountain Serenity</h4>
+                    <p>Keindahan tenang pegunungan gamkonora</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOTO 9: KEINDAHAN ALAM LAINNYA -->
+        <div class="col-md-6 col-lg-4">
+            <div class="gallery-card">
+
+                <!-- TEMPAT FOTO 9 -->
+                <!-- Contoh foto: img/keindahan.jpg -->
+                <img src="img/alam4.jpeg"
+                    alt="Gunung Gamkonora"
+                    class="gallery-card-image">
+
+                <!-- JUDUL FOTO 9 -->
+                <div class="gallery-card-info">
+                    <h4>On The Trail</h4>
+                    <p>Menjelajahi jalur pendakian gamkonora</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ======================================
+     5. CLOSING SECTION
+====================================== -->
+<section class="gallery-closing">
+
+    <div class="container">
+
+        <!-- JUDUL PENUTUP -->
+        <h2>
+            Every Picture Tells a Story
+        </h2>
+
+        <!-- PARAGRAF PENUTUP -->
+        <p>
+            Temukan keindahan Gamkonora dan simpan setiap
+            momen perjalanan menjadi cerita yang berharga.
+        </p>
+
+        <!-- TOMBOL KEMBALI -->
+        <a href="index.html" class="btn gallery-closing-button">
+            Kembali ke Home
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ======================================
+     6. FOOTER
+====================================== -->
+<footer class="home-footer">
+
+    <div class="container text-center">
+
+        <!-- NAMA WEBSITE -->
+        <h4>Explore Gamkonora</h4>
+
+        <!-- TAGLINE FOOTER -->
+        <p>Discover the Beauty of North Maluku</p>
+
+        <!-- COPYRIGHT -->
+        <small>
+            © 2026 Explore Gamkonora. All Rights Reserved.
+        </small>
+
+    </div>
+</footer>
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
